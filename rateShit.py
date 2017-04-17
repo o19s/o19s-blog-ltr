@@ -1,41 +1,28 @@
 from esUrlParse import parseUrl
-from judgments import Judgment
-from elasticsearch import Elasticsearch
+from judgments import Judgment, judgmentsFromFile, judgmentsToFile
+from elasticsearch import Elasticsearch, TransportError
+import json
 
-def getPotentialResults(esUrl, keywords, boostwords):
+def formatSearch(keywords):
+    from jinja2 import Template
+    template = Template(open("rateSearch.json.jinja").read())
+    jsonStr = template.render(keywords=keywords)
+    return json.loads(jsonStr)
+
+def getPotentialResults(esUrl, keywords):
     (esUrl, index, searchType) = parseUrl(esUrl)
     es = Elasticsearch(esUrl)
-    baseQuery = {
-        "query": {
-            "bool": {
-                "filter": [
-                    {
-                        "bool": {"should": [
-                            {"range": {
-                                "post_date": {
-                                    "gte": "now-2y/d"
-                                }
-                            }}]}
 
-                    }
-                ],
-                "should": [
-                    {"match": {
-                        "title": ""
-                    }},
-                    {"match": {
-                        "_all": ""
-                    }}
-                ]
-            }
-        },
-        "size": 2
-    }
+    query = formatSearch(keywords)
+    try:
+        results = es.search(index=index, doc_type=searchType, body=query)
+        return results['hits']['hits']
+    except TransportError as e:
+        print("Query %s" % json.dumps(query))
+        print("Query Error: %s " % e.error)
+        print("More Info  : %s " % e.info)
+        raise e
 
-    baseQuery["query"]["bool"]["should"][0]["match"]["title"] = keywords
-    baseQuery["query"]["bool"]["should"][1]["match"]["_all"] = boostwords
-    results = es.search(index=index, doc_type=searchType, body=baseQuery)
-    return results['hits']['hits']
 
 
 def gradeResults(results, keywords, qid):
@@ -62,24 +49,42 @@ def gradeResults(results, keywords, qid):
                 judgment = Judgment(int(grade), qid=qid, keywords=keywords, docId=result['_id'])
                 ratings.append(judgment)
 
-    for rating in ratings:
-        print(rating.toRanklibFormat())
-
+    return ratings
 
 
 
 if __name__ == "__main__":
+    """ Usage python rateShit.py esURL ratingsFileName """
     from sys import argv
 
+    judgFile = argv[2]
+
+    currJudgments = []
+    existingKws = set()
+    lastQid = 0
+    try:
+        currJudgments = [judg for judg in judgmentsFromFile(judgFile)]
+        existingKws = set([judg.keywords for judg in currJudgments])
+        lastQid = currJudgments[-1].qid
+    except FileNotFoundError:
+        pass
+
+
     keywords = "-"
-    qid = 1
+    qid = lastQid + 1
     while len(keywords) > 0:
-        keywords = input("Enter the Keywords ")
-        boostwords = input("What words can help me find that? ")
+        keywords = input("Enter the Keywords ('GTFO' to exit) ")
 
-        results = getPotentialResults(argv[1], keywords, boostwords)
-        gradeResults(results, keywords, qid)
+        if keywords == "GTFO":
+            break
 
-        qid += 1
+        if keywords in existingKws:
+            print ("Sorry, we already have ratings for %s. Try again" % keywords)
+        else:
+            results = getPotentialResults(argv[1], keywords)
+            ratings = gradeResults(results, keywords, qid)
+            currJudgments += ratings
 
+            qid += 1
 
+    judgmentsToFile(judgFile, currJudgments)

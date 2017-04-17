@@ -1,0 +1,55 @@
+{
+	"from": 0,
+	"size": 10,
+	"query": {
+		"bool": {
+			"should": [{
+				"match_phrase": {
+					"title.bigrams": {
+						"query": "{{ keywords }}",
+						"boost": 1000
+					}
+				}
+			}, {
+				"function_score": {
+					"query": {
+						"bool": {
+							"should": [{
+								"multi_match": {
+									"fields": ["title", "content", "categories"],
+									"query": "{{ keywords }}",
+									"type": "cross_fields"
+								}
+							}, {
+								"multi_match": {
+									"fields": ["title.bigrams", "content.bigrams"],
+									"query": "{{ keywords }}",
+									"type": "cross_fields",
+									"tie_breaker": 1
+								}
+							}]
+						}
+					},
+					"functions": [{
+						"gauss": {
+							"post_date": {
+								"origin": "now",
+								"scale": "50d",
+								"decay": 0.9
+							}
+						}
+					}, {
+						"weight": 1
+					}, {
+						"filter": {
+                            "match_phrase": {
+                                "categories": "{{ keywords }}"
+							}
+						},
+						"weight": 10
+					}]
+				}
+			}]
+		}
+	}
+}

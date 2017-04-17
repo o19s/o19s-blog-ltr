@@ -1,0 +1,20 @@
+{
+   "query": {
+      "function_score": {
+         "query": {
+            "match_all": {}
+         },
+         "functions": [
+            {
+               "gauss": {
+                  "post_date": {
+                     "scale": "50d",
+                     "origin": "now",
+                     "decay": 0.9
+                  }
+               }
+            }
+         ]
+      }
+   }
+}

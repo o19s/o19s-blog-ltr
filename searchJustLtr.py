@@ -35,7 +35,7 @@ if __name__ == "__main__":
     if len(argv) > 2:
         model = argv[2]
     baseQuery['query']['ltr']['model']['stored'] = model
-    results = es.search(index='tmdb', doc_type='movie', body=search)
+    results = es.search(index='o19s', doc_type='post', body=search)
     for result in results['hits']['hits']:
-             print(result['_source']['title'])
+             print("%s, %s" % (result['_id'], result['_source']['title']))
 

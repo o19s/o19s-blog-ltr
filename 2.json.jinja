@@ -3,7 +3,7 @@
         "multi_match": {
            "query": "{{keywords}}",
            "type": "cross_fields",
-           "fields": ["overview", "genres.name", "title", "tagline", "belongs_to_collection.name", "cast.name", "directors.name"],
+           "fields": ["title", "content", "categories"],
            "tie_breaker": 1.0
         }
     }

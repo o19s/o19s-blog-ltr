@@ -35,6 +35,12 @@ def _queriesFromHeader(lines):
 
     return rVal
 
+def _queriesToHeader(qidToKwDict):
+    rVal = ""
+    for qid, kws in qidToKwDict.items():
+        rVal += "# qid:%s: %s\n" % (qid, kws)
+    return rVal
+
 def _judgmentsFromBody(lines):
     """ Parses out judgment/grade, query id, and docId in line such as:
          4  qid:523   # a01  Grade for Rambo for query Foo
@@ -55,6 +61,17 @@ def judgmentsFromFile(filename):
         qidToKeywords = _queriesFromHeader(f)
         for grade, qid, docId in _judgmentsFromBody(f):
             yield Judgment(grade=grade, qid=qid, keywords=qidToKeywords[qid], docId=docId)
+
+def judgmentsToFile(filename, judgmentsList):
+    judgToQid = judgmentsByQid(judgmentsList) #Pretty hideosly slow stuff
+    fileHeader = _queriesToHeader({qid: judgs[0].keywords for qid, judgs in judgToQid.items()})
+    judgByQid = sorted(judgmentsList, key=lambda j: j.qid)
+    with open(filename, 'w+') as f:
+        f.write(fileHeader)
+        for judg in judgByQid:
+            f.write(judg.toRanklibFormat() + '\n')
+
+
 
 def judgmentsByQid(judgments):
     rVal = {}

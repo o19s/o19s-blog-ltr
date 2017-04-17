@@ -1,0 +1,214 @@
+# qid:1: solr
+# qid:2: elasticsearch
+# qid:3: cassandra
+# qid:4: camel
+# qid:5: elastic graph
+# qid:6: ebook
+# qid:7: e-book
+# qid:8: elastic-graph
+# qid:9: learning to rank
+# qid:10: semantic
+# qid:11: bm25f
+# qid:12: taming search
+# qid:13: bm25
+# qid:14: lunch and learn
+# qid:15: basket analysis
+# qid:16: graph
+# qid:17: indexing chinese
+# qid:18: elasticsearch recommendation system
+# qid:19: elasticsearch recsys
+# qid:20: elasticsearch recommender
+# qid:21: solr synonym
+4	qid:1	 # 4021588268	solr
+4   qid:1    # 4038633349   solr
+3	qid:1	 # 162357220	solr
+2   qid:1    # 184411193    solr
+2   qid:1    # 2848549888   solr
+2	qid:1	 # 417217470	solr
+2	qid:1	 # 3986527021	solr
+2   qid:1    # 3369505975   solr
+4	qid:1	 # 4036602523	solr
+0   qid:1    # 4177290998   solr
+0   qid:1    # 2579852587   solr
+0   qid:1    # 2926247873   solr
+0   qid:1    # 3065216762   solr
+0   qid:1    # 14036114     solr
+4	qid:2	 # 1265938948	elasticsearch
+4	qid:2	 # 3123649443	elasticsearch
+2	qid:2	 # 3252179363	elasticsearch
+4	qid:2	 # 254683007	elasticsearch
+3	qid:2	 # 17925372	elasticsearch
+2	qid:2	 # 417217470	elasticsearch
+3	qid:2	 # 3477505197	elasticsearch
+3	qid:2	 # 1891056050	elasticsearch
+3	qid:2	 # 578157694	elasticsearch
+4	qid:2	 # 4062359014	elasticsearch
+0   qid:2    # 4177290998   elasticsearch
+0	qid:3	 # 2992260052	cassandra
+4	qid:3	 # 1664871216	cassandra
+0	qid:3	 # 2606121430	cassandra
+2	qid:3	 # 3464168716	cassandra
+2	qid:3	 # 2741197519	cassandra
+2	qid:3	 # 1373706671	cassandra
+4	qid:3	 # 1357425427	cassandra
+4	qid:3	 # 2264869487	cassandra
+4	qid:3	 # 1839943486	cassandra
+2	qid:3	 # 180421401	cassandra
+2	qid:4	 # 422034358	camel
+4	qid:4	 # 1257472028	camel
+4	qid:4	 # 3501843710	camel
+4	qid:4	 # 1477529249	camel
+0	qid:4	 # 3738480096	camel
+0	qid:4	 # 2073248876	camel
+4	qid:5	 # 17925372	elastic graph
+3	qid:5	 # 1891056050	elastic graph
+2	qid:5	 # 1948242641	elastic graph
+2	qid:5	 # 578157694	elastic graph
+2	qid:5	 # 2201657261	elastic graph
+1	qid:5	 # 2642574926	elastic graph
+3	qid:5	 # 2223776635	elastic graph
+2	qid:5	 # 78637494	elastic graph
+0	qid:5	 # 3464168716	elastic graph
+0	qid:5	 # 2741197519	elastic graph
+4	qid:6	 # 4266372689	ebook
+3	qid:6	 # 3889254213	ebook
+2	qid:6	 # 576003762	ebook
+4	qid:7	 # 4266372689	e-book
+3	qid:7	 # 3889254213	e-book
+2	qid:7	 # 576003762	e-book
+3	qid:8	 # 1891056050	elastic-graph
+2	qid:8	 # 1948242641	elastic-graph
+2	qid:8	 # 578157694	elastic-graph
+2	qid:8	 # 2201657261	elastic-graph
+1	qid:8	 # 2642574926	elastic-graph
+3	qid:8	 # 2223776635	elastic-graph
+2	qid:8	 # 78637494	elastic-graph
+0	qid:8	 # 3464168716	elastic-graph
+0	qid:8	 # 2741197519	elastic-graph
+4	qid:9	 # 4062359014	learning to rank
+4	qid:9	 # 3252179363	learning to rank
+4	qid:9	 # 2642574926	learning to rank
+3	qid:9	 # 3477505197	learning to rank
+3	qid:9	 # 578157694	learning to rank
+4	qid:9	 # 1265938948	learning to rank
+3	qid:9	 # 2201657261	learning to rank
+1	qid:9	 # 3123649443	learning to rank
+0	qid:9	 # 1080984974	learning to rank
+1	qid:9	 # 1891056050	learning to rank
+2	qid:10	 # 2307460466	semantic
+4	qid:10	 # 3123649443	semantic
+4	qid:10	 # 254683007	semantic
+4	qid:10	 # 1757170846	semantic
+3	qid:10	 # 1502936313	semantic
+4	qid:10	 # 770893293	semantic
+2	qid:10	 # 480393712	semantic
+0	qid:10	 # 723702291	semantic
+2	qid:10	 # 2217914528	semantic
+4	qid:11	 # 162357220	bm25f
+4	qid:12	 # 4278858718	taming search
+3	qid:12	 # 2806202279	taming search
+1	qid:12	 # 3477505197	taming search
+1	qid:12	 # 578157694	taming search
+1	qid:12	 # 3986527021	taming search
+1	qid:12	 # 3252179363	taming search
+1	qid:12	 # 4062359014	taming search
+1	qid:12	 # 1265938948	taming search
+1	qid:12	 # 2642574926	taming search
+1	qid:12	 # 2349740828	taming search
+1	qid:12	 # 2307460466	taming search
+1	qid:12	 # 1891056050	taming search
+4	qid:13	 # 162357220	bm25
+0	qid:13	 # 1757170846	bm25
+4	qid:13	 # 82610579	bm25
+4	qid:14	 # 3071151997	lunch and learn
+0	qid:14	 # 3477505197	lunch and learn
+0	qid:14	 # 578157694	lunch and learn
+0	qid:14	 # 4062359014	lunch and learn
+0	qid:14	 # 2642574926	lunch and learn
+0	qid:14	 # 3252179363	lunch and learn
+0	qid:14	 # 1265938948	lunch and learn
+0	qid:14	 # 1080984974	lunch and learn
+0	qid:14	 # 1891056050	lunch and learn
+0	qid:14	 # 2201657261	lunch and learn
+0	qid:14	 # 2992260052	lunch and learn
+4	qid:15	 # 373776490	basket analysis
+0	qid:15	 # 2307460466	basket analysis
+3	qid:15	 # 2223776635	basket analysis
+1	qid:15	 # 254683007	basket analysis
+1	qid:15	 # 3123649443	basket analysis
+0	qid:15	 # 3629971547	basket analysis
+0	qid:15	 # 421331994	basket analysis
+0	qid:15	 # 2579852587	basket analysis
+1	qid:15	 # 4038633349	basket analysis
+0	qid:15	 # 3440818580	basket analysis
+3	qid:16	 # 1891056050	graph
+1	qid:16	 # 2642574926	graph
+4	qid:16	 # 17925372	graph
+3	qid:16	 # 2223776635	graph
+1	qid:16	 # 78637494	graph
+1	qid:16	 # 3464168716	graph
+1	qid:16	 # 2741197519	graph
+1	qid:16	 # 1373706671	graph
+2	qid:16	 # 373776490	graph
+1	qid:16	 # 2916170833	graph
+4	qid:17	 # 2502109327	indexing chinese
+1	qid:17	 # 2349740828	indexing chinese
+0	qid:17	 # 3252179363	indexing chinese
+0	qid:17	 # 4062359014	indexing chinese
+0	qid:17	 # 1265938948	indexing chinese
+0	qid:17	 # 2307460466	indexing chinese
+0	qid:17	 # 254683007	indexing chinese
+0	qid:17	 # 162357220	indexing chinese
+1	qid:17	 # 3123649443	indexing chinese
+0	qid:17	 # 417217470	indexing chinese
+4	qid:18	 # 17925372	elasticsearch recommendation system
+4	qid:18	 # 2223776635	elasticsearch recommendation system
+3	qid:18	 # 373776490	elasticsearch recommendation system
+3	qid:18	 # 1891056050	elasticsearch recommendation system
+2	qid:18	 # 1265938948	elasticsearch recommendation system
+2	qid:18	 # 3252179363	elasticsearch recommendation system
+2	qid:18	 # 3477505197	elasticsearch recommendation system
+2	qid:18	 # 578157694	elasticsearch recommendation system
+2	qid:18	 # 4062359014	elasticsearch recommendation system
+2	qid:18	 # 2201657261	elasticsearch recommendation system
+0	qid:18	 # 2307460466	elasticsearch recommendation system
+0	qid:18	 # 2642574926	elasticsearch recommendation system
+1	qid:18	 # 3123649443	elasticsearch recommendation system
+4	qid:19	 # 17925372	elasticsearch recsys
+4	qid:19	 # 2223776635	elasticsearch recsys
+3	qid:19	 # 373776490	elasticsearch recsys
+3	qid:19	 # 1891056050	elasticsearch recsys
+2	qid:19	 # 1265938948	elasticsearch recsys
+2	qid:19	 # 3252179363	elasticsearch recsys
+2	qid:19	 # 3477505197	elasticsearch recsys
+2	qid:19	 # 578157694	elasticsearch recsys
+2	qid:19	 # 4062359014	elasticsearch recsys
+2	qid:19	 # 2201657261	elasticsearch recsys
+0	qid:19	 # 2307460466	elasticsearch recsys
+0	qid:19	 # 2642574926	elasticsearch recsys
+1	qid:19	 # 3123649443	elasticsearch recsys
+4	qid:20	 # 17925372	elasticsearch recommender
+4	qid:20	 # 2223776635	elasticsearch recommender
+3	qid:20	 # 373776490	elasticsearch recommender
+3	qid:20	 # 1891056050	elasticsearch recommender
+2	qid:20	 # 1265938948	elasticsearch recommender
+2	qid:20	 # 3252179363	elasticsearch recommender
+2	qid:20	 # 3477505197	elasticsearch recommender
+2	qid:20	 # 578157694	elasticsearch recommender
+2	qid:20	 # 4062359014	elasticsearch recommender
+2	qid:20	 # 2201657261	elasticsearch recommender
+0	qid:20	 # 2307460466	elasticsearch recommender
+0	qid:20	 # 2642574926	elasticsearch recommender
+1	qid:20	 # 3123649443	elasticsearch recommender
+4	qid:21	 # 2307460466	solr synonym
+4	qid:21	 # 4221484365	solr synonym
+4	qid:21	 # 4038633349	solr synonym
+2	qid:21	 # 3123649443	solr synonym
+2	qid:21	 # 254683007	solr synonym
+1	qid:21	 # 3986527021	solr synonym
+1	qid:21	 # 4021588268	solr synonym
+1	qid:21	 # 4036602523	solr synonym
+0	qid:21	 # 2349740828	solr synonym
+0	qid:21	 # 2225179329	solr synonym
+0	qid:21	 # 4062359014	solr synonym
+0	qid:21	 # 2992260052	solr synonym

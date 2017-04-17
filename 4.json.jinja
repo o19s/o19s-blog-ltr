@@ -1,7 +1,7 @@
 {
     "query": {
         "match_phrase": {
-           "title": "{{ keywords }}"
+           "title.bigrams": "{{ keywords }}"
         }
     }
 }
