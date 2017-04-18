@@ -22,12 +22,26 @@
 # qid:22: machine learning
 # qid:23: nosql
 # qid:24: relevant search
-2	qid:1	 # 184411193	solr
+# qid:25: lucene
+# qid:26: trey grainger
+# qid:27: twitter
+# qid:28: naive bayes
+4   qid:1    # 4036602523   solr
+4   qid:1    # 2349740828   solr
+4   qid:1    # 2307460466   solr
+4   qid:1    # 4036602523   solr
+3	qid:1	 # 3394242689	solr
+3	qid:1	 # 2916170833	solr
+2	qid:1	 # 3501843710	solr
+2	qid:1	 # 3225155378	solr
+2	qid:1	 # 1502936313	solr
+2	qid:1	 # 3252179363	solr
 2	qid:1	 # 2848549888	solr
 2	qid:1	 # 417217470	solr
 2	qid:1	 # 3986527021	solr
 2	qid:1	 # 3369505975	solr
-4	qid:1	 # 4036602523	solr
+2	qid:1	 # 3252179363	solr
+2   qid:1    # 2502109327   solr
 0	qid:1	 # 4177290998	solr
 0	qid:1	 # 2579852587	solr
 0	qid:1	 # 2926247873	solr
@@ -141,6 +155,7 @@
 0	qid:15	 # 2579852587	basket analysis
 1	qid:15	 # 4038633349	basket analysis
 0	qid:15	 # 3440818580	basket analysis
+4   qid:16   # 1261816617   graph
 3	qid:16	 # 1891056050	graph
 1	qid:16	 # 2642574926	graph
 4	qid:16	 # 17925372	graph
@@ -245,3 +260,44 @@
 1	qid:24	 # 3252179363	relevant search
 1	qid:24	 # 2642574926	relevant search
 1	qid:24	 # 2307460466	relevant search
+2	qid:25	 # 2349740828	lucene
+4	qid:25	 # 162357220	lucene
+2	qid:25	 # 4021588268	lucene
+2	qid:25	 # 4036602523	lucene
+2	qid:25	 # 2307460466	lucene
+1	qid:25	 # 3071151997	lucene
+1	qid:25	 # 1502936313	lucene
+1	qid:25	 # 2225179329	lucene
+1	qid:25	 # 417217470	lucene
+1	qid:25	 # 3889254213	lucene
+4	qid:25	 # 129116797	lucene
+3	qid:25	 # 24144429	lucene
+4	qid:26	 # 4021588268	trey grainger
+4	qid:26	 # 4036602523	trey grainger
+1	qid:26	 # 3123649443	trey grainger
+2	qid:26	 # 1757170846	trey grainger
+2	qid:26	 # 797623552	trey grainger
+2	qid:26	 # 2313575358	trey grainger
+1	qid:27	 # 1981875655	twitter
+0	qid:27	 # 3196257554	twitter
+0	qid:27	 # 1477529249	twitter
+4	qid:27	 # 1261816617	twitter
+3	qid:27	 # 811659963	twitter
+1	qid:27	 # 3254817894	twitter
+2	qid:27	 # 2649777504	twitter
+1	qid:27	 # 183966150	twitter
+1	qid:27	 # 4221484365	twitter
+2	qid:27	 # 3317415793	twitter
+0	qid:27	 # 886795686	twitter
+4	qid:28	 # 183966150	naive bayes
+2	qid:28	 # 4062359014	naive bayes
+1	qid:28	 # 254683007	naive bayes
+2	qid:28	 # 2223776635	naive bayes
+0	qid:28	 # 2606121430	naive bayes
+3	qid:28	 # 373776490	naive bayes
+1	qid:28	 # 1799541610	naive bayes
+0	qid:28	 # 1477965552	naive bayes
+2	qid:28	 # 2649777504	naive bayes
+0	qid:28	 # 4139262559	naive bayes
+0	qid:28	 # 2079275388	naive bayes
+0	qid:28	 # 4266372689	naive bayes
