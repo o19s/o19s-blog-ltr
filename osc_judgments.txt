@@ -29,7 +29,6 @@
 4   qid:1    # 4036602523   solr
 4   qid:1    # 2349740828   solr
 4   qid:1    # 2307460466   solr
-4   qid:1    # 4036602523   solr
 3	qid:1	 # 3394242689	solr
 3	qid:1	 # 2916170833	solr
 2	qid:1	 # 3501843710	solr
