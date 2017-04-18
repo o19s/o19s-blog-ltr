@@ -1,3 +1,8 @@
+# LTR cruft
+RankLib.jar
+model.txt
+osc_judgments_wfeatures.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
