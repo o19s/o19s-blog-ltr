@@ -1,7 +1,8 @@
 # LTR cruft
 RankLib.jar
 model.txt
-osc_judgments_wfeatures.txt
+osc_judgments_wfeatures_test.txt
+osc_judgments_wfeatures_train.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

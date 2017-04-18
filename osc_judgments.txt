@@ -19,20 +19,20 @@
 # qid:19: elasticsearch recsys
 # qid:20: elasticsearch recommender
 # qid:21: solr synonym
-4	qid:1	 # 4021588268	solr
-4   qid:1    # 4038633349   solr
-3	qid:1	 # 162357220	solr
-2   qid:1    # 184411193    solr
-2   qid:1    # 2848549888   solr
+# qid:22: machine learning
+# qid:23: nosql
+# qid:24: relevant search
+2	qid:1	 # 184411193	solr
+2	qid:1	 # 2848549888	solr
 2	qid:1	 # 417217470	solr
 2	qid:1	 # 3986527021	solr
-2   qid:1    # 3369505975   solr
+2	qid:1	 # 3369505975	solr
 4	qid:1	 # 4036602523	solr
-0   qid:1    # 4177290998   solr
-0   qid:1    # 2579852587   solr
-0   qid:1    # 2926247873   solr
-0   qid:1    # 3065216762   solr
-0   qid:1    # 14036114     solr
+0	qid:1	 # 4177290998	solr
+0	qid:1	 # 2579852587	solr
+0	qid:1	 # 2926247873	solr
+0	qid:1	 # 3065216762	solr
+0	qid:1	 # 14036114	solr
 4	qid:2	 # 1265938948	elasticsearch
 4	qid:2	 # 3123649443	elasticsearch
 2	qid:2	 # 3252179363	elasticsearch
@@ -43,7 +43,7 @@
 3	qid:2	 # 1891056050	elasticsearch
 3	qid:2	 # 578157694	elasticsearch
 4	qid:2	 # 4062359014	elasticsearch
-0   qid:2    # 4177290998   elasticsearch
+0	qid:2	 # 4177290998	elasticsearch
 0	qid:3	 # 2992260052	cassandra
 4	qid:3	 # 1664871216	cassandra
 0	qid:3	 # 2606121430	cassandra
@@ -212,3 +212,36 @@
 0	qid:21	 # 2225179329	solr synonym
 0	qid:21	 # 4062359014	solr synonym
 0	qid:21	 # 2992260052	solr synonym
+4	qid:22	 # 1095227228	machine learning
+4	qid:22	 # 3252179363	machine learning
+4	qid:22	 # 1265938948	machine learning
+3	qid:22	 # 4062359014	machine learning
+3	qid:22	 # 2642574926	machine learning
+3	qid:22	 # 3477505197	machine learning
+3	qid:22	 # 578157694	machine learning
+2	qid:22	 # 1891056050	machine learning
+0	qid:22	 # 3123649443	machine learning
+0	qid:22	 # 254683007	machine learning
+0	qid:23	 # 180421401	nosql
+0	qid:23	 # 2737652561	nosql
+4	qid:23	 # 1324285558	nosql
+3	qid:23	 # 1166628638	nosql
+1	qid:23	 # 3975352549	nosql
+2	qid:23	 # 1199740926	nosql
+4	qid:23	 # 1561094272	nosql
+3	qid:23	 # 3196257554	nosql
+3	qid:23	 # 4103402538	nosql
+3	qid:23	 # 3172037296	nosql
+4	qid:23	 # 368924233	nosql
+3	qid:23	 # 636146432	nosql
+3	qid:23	 # 1664871216	nosql
+4	qid:24	 # 3440818580	relevant search
+4	qid:24	 # 645980194	relevant search
+3	qid:24	 # 1477965552	relevant search
+4	qid:24	 # 2079275388	relevant search
+3	qid:24	 # 1871390732	relevant search
+1	qid:24	 # 4062359014	relevant search
+1	qid:24	 # 1265938948	relevant search
+1	qid:24	 # 3252179363	relevant search
+1	qid:24	 # 2642574926	relevant search
+1	qid:24	 # 2307460466	relevant search

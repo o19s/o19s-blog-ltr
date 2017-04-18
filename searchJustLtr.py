@@ -12,7 +12,7 @@ baseQuery = {
   }
 }
 
-def featureQueries(keywords, model):
+def justLtrTemplate(model):
     try:
         ftrId = 1
         while True:
@@ -23,7 +23,20 @@ def featureQueries(keywords, model):
         pass
     baseQuery['query']['ltr']['model']['stored'] = model
     print("%s" % json.dumps(baseQuery))
-    return baseQuery
+    return baseQuery['query']
+
+def featureQueries(keywords, model):
+    try:
+        ftrId = 1
+        while True:
+            parsedJson = formatFeature(ftrId, "{{query_string}}")
+            baseQuery['query']['ltr']['features'].append(parsedJson['query'])
+            ftrId += 1
+    except IOError:
+        pass
+    baseQuery['query']['ltr']['model']['stored'] = model
+    print("%s" % json.dumps(baseQuery['query']))
+    return baseQuery['query']
 
 
 if __name__ == "__main__":
