@@ -3,8 +3,8 @@ from features import kwDocFeatures, buildFeaturesJudgmentsFile
 
 
 def trainModel(trainingData, testData, modelOutput, whichModel=6):
-    # java -jar RankLib-2.6.jar -ranker 6 -kcv -train osc_judgments_wfeatures_train.txt -test osc_judgments_wfeatures_test.txt -save model.txt
-    cmd = "java -jar RankLib.jar -ranker %s -train %s -test %s -save %s -frate 1.0" % (whichModel, trainingData, testData, modelOutput)
+    # java -jar RankLib-2.6.jar  -ranker 6 -kcv -train osc_judgments_wfeatures_train.txt -test osc_judgments_wfeatures_test.txt -save model.txt
+    cmd = "java -jar RankLib.jar -tree 30 -ranker %s -train %s -test %s -save %s -frate 1.0" % (whichModel, trainingData, testData, modelOutput)
     print("*********************************************************************")
     print("*********************************************************************")
     print("Running %s" % cmd)

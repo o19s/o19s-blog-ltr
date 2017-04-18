@@ -66,7 +66,6 @@ def judgmentsFromFile(filename):
 def judgmentsToFile(filename, judgmentsList):
     judgToQid = judgmentsByQid(judgmentsList) #Pretty hideosly slow stuff
     fileHeader = _queriesToHeader({qid: judgs[0].keywords for qid, judgs in judgToQid.items()})
-    import pdb; pdb.set_trace()
     judgByQid = sorted(judgmentsList, key=lambda j: j.qid)
     with open(filename, 'w+') as f:
         f.write(fileHeader)

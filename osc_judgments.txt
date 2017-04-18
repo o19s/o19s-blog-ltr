@@ -26,9 +26,18 @@
 # qid:26: trey grainger
 # qid:27: twitter
 # qid:28: naive bayes
-4   qid:1    # 4036602523   solr
-4   qid:1    # 2349740828   solr
-4   qid:1    # 2307460466   solr
+# qid:29: facebook
+# qid:30: neo4j
+# qid:31: java
+# qid:32: linux
+# qid:33: groovy
+# qid:34: stackoverflow
+# qid:35: charlottesville
+# qid:36: elasticon
+
+4	qid:1	 # 4036602523	solr
+4	qid:1	 # 2349740828	solr
+4	qid:1	 # 2307460466	solr
 3	qid:1	 # 3394242689	solr
 3	qid:1	 # 2916170833	solr
 2	qid:1	 # 3501843710	solr
@@ -40,7 +49,7 @@
 2	qid:1	 # 3986527021	solr
 2	qid:1	 # 3369505975	solr
 2	qid:1	 # 3252179363	solr
-2   qid:1    # 2502109327   solr
+2	qid:1	 # 2502109327	solr
 0	qid:1	 # 4177290998	solr
 0	qid:1	 # 2579852587	solr
 0	qid:1	 # 2926247873	solr
@@ -154,7 +163,7 @@
 0	qid:15	 # 2579852587	basket analysis
 1	qid:15	 # 4038633349	basket analysis
 0	qid:15	 # 3440818580	basket analysis
-4   qid:16   # 1261816617   graph
+4	qid:16	 # 1261816617	graph
 3	qid:16	 # 1891056050	graph
 1	qid:16	 # 2642574926	graph
 4	qid:16	 # 17925372	graph
@@ -300,3 +309,76 @@
 0	qid:28	 # 4139262559	naive bayes
 0	qid:28	 # 2079275388	naive bayes
 0	qid:28	 # 4266372689	naive bayes
+3	qid:29	 # 78637494	facebook
+0	qid:29	 # 1324285558	facebook
+0	qid:29	 # 3504627060	facebook
+0	qid:29	 # 391756821	facebook
+0	qid:29	 # 1655804498	facebook
+0	qid:29	 # 3935612548	facebook
+4	qid:29	 # 3720187317	facebook
+0	qid:29	 # 1290034890	facebook
+0	qid:29	 # 1457754933	facebook
+0	qid:29	 # 671743641	facebook
+2	qid:30	 # 3619047272	neo4j
+4	qid:30	 # 857826361	neo4j
+4	qid:30	 # 1261816617	neo4j
+2	qid:30	 # 1952428817	neo4j
+0	qid:30	 # 365302632	neo4j
+0	qid:30	 # 57895634	neo4j
+2	qid:31	 # 1265938948	java
+1	qid:31	 # 2349740828	java
+2	qid:31	 # 422034358	java
+2	qid:31	 # 162357220	java
+2	qid:31	 # 2225179329	java
+2	qid:31	 # 4038633349	java
+2	qid:31	 # 2993628421	java
+3	qid:31	 # 1357425427	java
+2	qid:31	 # 3733970934	java
+4	qid:31	 # 232488395	java
+0	qid:32	 # 1012672081	linux
+0	qid:32	 # 4028652739	linux
+1	qid:32	 # 3372156063	linux
+2	qid:32	 # 178767896	linux
+0	qid:32	 # 874665484	linux
+1	qid:32	 # 1639466966	linux
+1	qid:32	 # 1403395131	linux
+1	qid:32	 # 2926247873	linux
+1	qid:32	 # 2288523970	linux
+1	qid:32	 # 1045787892	linux
+3	qid:32	 # 470096656	linux
+3	qid:32	 # 3920569696	linux
+2	qid:32	 # 1540656353	linux
+0	qid:32	 # 365302632	linux
+3	qid:32	 # 2993628421	linux
+1	qid:33	 # 1921332185	groovy
+4	qid:33	 # 19518116	groovy
+1	qid:33	 # 3959869812	groovy
+1	qid:34	 # 2611621477	stackoverflow
+1	qid:34	 # 1324285558	stackoverflow
+1	qid:34	 # 2171736001	stackoverflow
+1	qid:34	 # 671920464	stackoverflow
+1	qid:34	 # 2677201138	stackoverflow
+3	qid:34	 # 3251113306	stackoverflow
+4	qid:34	 # 230316351	stackoverflow
+1	qid:34	 # 1260497215	stackoverflow
+4	qid:34	 # 3369505975	stackoverflow
+4	qid:34	 # 528884161	stackoverflow
+0	qid:35	 # 2992260052	charlottesville
+3	qid:35	 # 1754464133	charlottesville
+0	qid:35	 # 78637494	charlottesville
+3	qid:35	 # 3132819379	charlottesville
+3	qid:35	 # 2599472181	charlottesville
+0	qid:35	 # 180421401	charlottesville
+4	qid:35	 # 1984801189	charlottesville
+3	qid:35	 # 1765487539	charlottesville
+3	qid:35	 # 2994685581	charlottesville
+3	qid:35	 # 3966062838	charlottesville
+3	qid:35	 # 243943971	charlottesville
+3	qid:35	 # 961880621	charlottesville
+0	qid:35	 # 4202049025	charlottesville
+1	qid:35	 # 3975352549	charlottesville
+1	qid:35	 # 3717421790	charlottesville
+3	qid:35	 # 2466162694	charlottesville
+4	qid:36	 # 2201657261	elasticon
+4	qid:36	 # 2923996613	elasticon
+0	qid:36	 # 19518116     elasticon
