@@ -37,12 +37,15 @@
 # qid:37: lucene revolution
 # qid:38: book
 # qid:39: map reduce
+# qid:41: utf 8
+# qid:42: linear models
+# qid:43: data hackers
 
 4	qid:1	 # 4036602523	solr
 4	qid:1	 # 2349740828	solr
 4	qid:1	 # 2307460466	solr
 4	qid:1	 # 4021588268	solr
-3   qid:1    # 3873568549   solr
+3	qid:1	 # 3873568549	solr
 3	qid:1	 # 2721405712	solr
 3	qid:1	 # 3780360030	solr
 3	qid:1	 # 3941005933	solr
@@ -71,9 +74,10 @@
 0	qid:1	 # 14036114	solr
 0	qid:1	 # 1765487539	solr
 4	qid:2	 # 1265938948	elasticsearch
-4	qid:2	 # 3123649443	elasticsearch
+3	qid:2	 # 3123649443	elasticsearch
 2	qid:2	 # 3252179363	elasticsearch
-4	qid:2	 # 254683007	elasticsearch
+3	qid:2	 # 254683007	elasticsearch
+3   qid:2    # 2993628421   elasticsearch
 3	qid:2	 # 2689407214	elasticsearch
 3	qid:2	 # 17925372	elasticsearch
 2	qid:2	 # 417217470	elasticsearch
@@ -82,6 +86,7 @@
 3	qid:2	 # 578157694	elasticsearch
 4	qid:2	 # 4062359014	elasticsearch
 0	qid:2	 # 4177290998	elasticsearch
+3   qid:2    # 3252179363   elasticsearch
 0	qid:3	 # 2992260052	cassandra
 4	qid:3	 # 1664871216	cassandra
 0	qid:3	 # 2606121430	cassandra
@@ -295,7 +300,7 @@
 1	qid:25	 # 417217470	lucene
 1	qid:25	 # 3889254213	lucene
 3	qid:25	 # 129116797	lucene
-3   qid:25   # 324502405    lucene
+3	qid:25	 # 324502405	lucene
 3	qid:25	 # 24144429	lucene
 4	qid:26	 # 4021588268	trey grainger
 4	qid:26	 # 4036602523	trey grainger
@@ -435,8 +440,47 @@
 0	qid:39	 # 2307460466	map reduce
 0	qid:39	 # 421331994	map reduce
 0	qid:39	 # 2223776635	map reduce
-2   qid:39   # 2681417019   map reduce
-3   qid:39   # 3741049837   map reduce
-3   qid:39   # 3299536379   map reduce
-2   qid:39   # 3065216762   map reduce
-1   qid:39   # 3828434690   map reduce
+2	qid:39	 # 2681417019	map reduce
+3	qid:39	 # 3741049837	map reduce
+3	qid:39	 # 3299536379	map reduce
+2	qid:39	 # 3065216762	map reduce
+1	qid:39	 # 3828434690	map reduce
+4	qid:41	 # 2349740828	utf 8
+1	qid:41	 # 1080984974	utf 8
+0	qid:41	 # 17925372	utf 8
+0	qid:41	 # 2993628421	utf 8
+0	qid:41	 # 4028652739	utf 8
+1	qid:41	 # 2217914528	utf 8
+0	qid:41	 # 82610579	utf 8
+0	qid:41	 # 1984801189	utf 8
+2	qid:41	 # 4020043048	utf 8
+0	qid:41	 # 2165998155	utf 8
+4	qid:41	 # 2349740828	utf 8
+1	qid:41	 # 1080984974	utf 8
+0	qid:41	 # 17925372	utf 8
+0	qid:41	 # 2993628421	utf 8
+0	qid:41	 # 4028652739	utf 8
+1	qid:41	 # 2217914528	utf 8
+0	qid:41	 # 82610579	utf 8
+0	qid:41	 # 1984801189	utf 8
+2	qid:41	 # 4020043048	utf 8
+0	qid:41	 # 2165998155	utf 8
+4	qid:42	 # 2642574926	linear models
+4	qid:42	 # 4062359014	linear models
+2	qid:42	 # 3252179363	linear models
+2	qid:42	 # 1265938948	linear models
+2	qid:42	 # 3477505197	linear models
+1	qid:42	 # 578157694	linear models
+0	qid:42	 # 422034358	linear models
+1	qid:42	 # 3123649443	linear models
+0	qid:42	 # 1664871216	linear models
+1	qid:42	 # 162357220	linear models
+4	qid:43	 # 3477505197	data hackers
+3	qid:43	 # 3276672333	data hackers
+3	qid:43	 # 652349051	data hackers
+0	qid:43	 # 3252179363	data hackers
+0	qid:43	 # 2642574926	data hackers
+0	qid:43	 # 4062359014	data hackers
+1	qid:43	 # 1891056050	data hackers
+0	qid:43	 # 2992260052	data hackers
+0	qid:43	 # 422034358	data hackers

@@ -48,7 +48,7 @@ if __name__ == "__main__":
     es = Elasticsearch(timeout=1000)
     # Parse a judgments
     judgments = judgmentsByQid(judgmentsFromFile(filename='osc_judgments.txt'))
-    trainJudgments, testJudgments = partitionJudgments(judgments, testProportion=0.1)
+    trainJudgments, testJudgments = partitionJudgments(judgments, testProportion=0.05)
     # Use proposed Elasticsearch queries (1.json.jinja ... N.json.jinja) to generate a training set
     # output as "osc_judgments_wfeatures.txt"
     kwDocFeatures(es, index='o19s', searchType='post', judgements=judgments)
