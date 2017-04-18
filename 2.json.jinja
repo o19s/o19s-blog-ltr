@@ -1,10 +1,9 @@
 {
     "query": {
-        "multi_match": {
-           "query": "{{keywords}}",
-           "type": "cross_fields",
-           "fields": ["title", "content", "categories"],
-           "tie_breaker": 1.0
+        "match": {
+           "content": {
+              "query": "{{keywords}}"
+            }
         }
     }
 }

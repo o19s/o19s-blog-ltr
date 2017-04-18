@@ -34,31 +34,47 @@
 # qid:34: stackoverflow
 # qid:35: charlottesville
 # qid:36: elasticon
+# qid:37: lucene revolution
+# qid:38: book
+# qid:39: map reduce
 
 4	qid:1	 # 4036602523	solr
 4	qid:1	 # 2349740828	solr
 4	qid:1	 # 2307460466	solr
+4	qid:1	 # 4021588268	solr
+3   qid:1    # 3873568549   solr
+3	qid:1	 # 2721405712	solr
+3	qid:1	 # 3780360030	solr
+3	qid:1	 # 3941005933	solr
+3	qid:1	 # 1686720823	solr
 3	qid:1	 # 3394242689	solr
 3	qid:1	 # 2916170833	solr
+2	qid:1	 # 3245818064	solr
+2	qid:1	 # 3913088476	solr
 2	qid:1	 # 3501843710	solr
+2	qid:1	 # 4124823494	solr
 2	qid:1	 # 3225155378	solr
 2	qid:1	 # 1502936313	solr
 2	qid:1	 # 3252179363	solr
 2	qid:1	 # 2848549888	solr
 2	qid:1	 # 417217470	solr
 2	qid:1	 # 3986527021	solr
-2	qid:1	 # 3369505975	solr
+3	qid:1	 # 3369505975	solr
 2	qid:1	 # 3252179363	solr
 2	qid:1	 # 2502109327	solr
+2	qid:1	 # 3440818580	solr
+1	qid:1	 # 78637494	solr
 0	qid:1	 # 4177290998	solr
 0	qid:1	 # 2579852587	solr
 0	qid:1	 # 2926247873	solr
 0	qid:1	 # 3065216762	solr
 0	qid:1	 # 14036114	solr
+0	qid:1	 # 1765487539	solr
 4	qid:2	 # 1265938948	elasticsearch
 4	qid:2	 # 3123649443	elasticsearch
 2	qid:2	 # 3252179363	elasticsearch
 4	qid:2	 # 254683007	elasticsearch
+3	qid:2	 # 2689407214	elasticsearch
 3	qid:2	 # 17925372	elasticsearch
 2	qid:2	 # 417217470	elasticsearch
 3	qid:2	 # 3477505197	elasticsearch
@@ -235,7 +251,7 @@
 0	qid:21	 # 2225179329	solr synonym
 0	qid:21	 # 4062359014	solr synonym
 0	qid:21	 # 2992260052	solr synonym
-4	qid:22	 # 1095227228	machine learning
+3	qid:22	 # 1095227228	machine learning
 4	qid:22	 # 3252179363	machine learning
 4	qid:22	 # 1265938948	machine learning
 3	qid:22	 # 4062359014	machine learning
@@ -247,17 +263,17 @@
 0	qid:22	 # 254683007	machine learning
 0	qid:23	 # 180421401	nosql
 0	qid:23	 # 2737652561	nosql
-4	qid:23	 # 1324285558	nosql
-3	qid:23	 # 1166628638	nosql
+3	qid:23	 # 1324285558	nosql
+2	qid:23	 # 1166628638	nosql
 1	qid:23	 # 3975352549	nosql
 2	qid:23	 # 1199740926	nosql
-4	qid:23	 # 1561094272	nosql
-3	qid:23	 # 3196257554	nosql
-3	qid:23	 # 4103402538	nosql
-3	qid:23	 # 3172037296	nosql
-4	qid:23	 # 368924233	nosql
-3	qid:23	 # 636146432	nosql
-3	qid:23	 # 1664871216	nosql
+3	qid:23	 # 1561094272	nosql
+2	qid:23	 # 3196257554	nosql
+2	qid:23	 # 4103402538	nosql
+2	qid:23	 # 3172037296	nosql
+3	qid:23	 # 368924233	nosql
+2	qid:23	 # 636146432	nosql
+2	qid:23	 # 1664871216	nosql
 4	qid:24	 # 3440818580	relevant search
 4	qid:24	 # 645980194	relevant search
 3	qid:24	 # 1477965552	relevant search
@@ -278,7 +294,8 @@
 1	qid:25	 # 2225179329	lucene
 1	qid:25	 # 417217470	lucene
 1	qid:25	 # 3889254213	lucene
-4	qid:25	 # 129116797	lucene
+3	qid:25	 # 129116797	lucene
+3   qid:25   # 324502405    lucene
 3	qid:25	 # 24144429	lucene
 4	qid:26	 # 4021588268	trey grainger
 4	qid:26	 # 4036602523	trey grainger
@@ -289,15 +306,15 @@
 1	qid:27	 # 1981875655	twitter
 0	qid:27	 # 3196257554	twitter
 0	qid:27	 # 1477529249	twitter
-4	qid:27	 # 1261816617	twitter
-3	qid:27	 # 811659963	twitter
+3	qid:27	 # 1261816617	twitter
+2	qid:27	 # 811659963	twitter
 1	qid:27	 # 3254817894	twitter
-2	qid:27	 # 2649777504	twitter
+1	qid:27	 # 2649777504	twitter
 1	qid:27	 # 183966150	twitter
 1	qid:27	 # 4221484365	twitter
 2	qid:27	 # 3317415793	twitter
 0	qid:27	 # 886795686	twitter
-4	qid:28	 # 183966150	naive bayes
+3	qid:28	 # 183966150	naive bayes
 2	qid:28	 # 4062359014	naive bayes
 1	qid:28	 # 254683007	naive bayes
 2	qid:28	 # 2223776635	naive bayes
@@ -315,13 +332,13 @@
 0	qid:29	 # 391756821	facebook
 0	qid:29	 # 1655804498	facebook
 0	qid:29	 # 3935612548	facebook
-4	qid:29	 # 3720187317	facebook
+3	qid:29	 # 3720187317	facebook
 0	qid:29	 # 1290034890	facebook
 0	qid:29	 # 1457754933	facebook
 0	qid:29	 # 671743641	facebook
 2	qid:30	 # 3619047272	neo4j
-4	qid:30	 # 857826361	neo4j
-4	qid:30	 # 1261816617	neo4j
+3	qid:30	 # 857826361	neo4j
+3	qid:30	 # 1261816617	neo4j
 2	qid:30	 # 1952428817	neo4j
 0	qid:30	 # 365302632	neo4j
 0	qid:30	 # 57895634	neo4j
@@ -351,7 +368,7 @@
 0	qid:32	 # 365302632	linux
 3	qid:32	 # 2993628421	linux
 1	qid:33	 # 1921332185	groovy
-4	qid:33	 # 19518116	groovy
+3	qid:33	 # 19518116	groovy
 1	qid:33	 # 3959869812	groovy
 1	qid:34	 # 2611621477	stackoverflow
 1	qid:34	 # 1324285558	stackoverflow
@@ -381,4 +398,45 @@
 3	qid:35	 # 2466162694	charlottesville
 4	qid:36	 # 2201657261	elasticon
 4	qid:36	 # 2923996613	elasticon
-0	qid:36	 # 19518116     elasticon
+0	qid:36	 # 19518116	elasticon
+3	qid:37	 # 3858656913	lucene revolution
+4	qid:37	 # 797623552	lucene revolution
+4	qid:37	 # 4021588268	lucene revolution
+4	qid:37	 # 4036602523	lucene revolution
+4	qid:37	 # 2721405712	lucene revolution
+3	qid:37	 # 2313575358	lucene revolution
+3	qid:37	 # 162357220	lucene revolution
+1	qid:37	 # 2307460466	lucene revolution
+0	qid:37	 # 2349740828	lucene revolution
+1	qid:37	 # 2225179329	lucene revolution
+0	qid:37	 # 2223776635	lucene revolution
+4	qid:38	 # 3440818580	book
+4	qid:38	 # 645980194	book
+3	qid:38	 # 1477965552	book
+4	qid:38	 # 2079275388	book
+3	qid:38	 # 1871390732	book
+1	qid:38	 # 3252179363	book
+1	qid:38	 # 1265938948	book
+2	qid:38	 # 2373960554	book
+0	qid:38	 # 3419956617	book
+0	qid:38	 # 2721405712	book
+0	qid:38	 # 162357220	book
+1	qid:38	 # 3889254213	book
+0	qid:38	 # 78637494	book
+0	qid:38	 # 2223776635	book
+0	qid:38	 # 17925372	book
+0	qid:39	 # 2349740828	map reduce
+0	qid:39	 # 1080984974	map reduce
+0	qid:39	 # 1709635687	map reduce
+0	qid:39	 # 2642574926	map reduce
+0	qid:39	 # 1265938948	map reduce
+0	qid:39	 # 3123649443	map reduce
+0	qid:39	 # 254683007	map reduce
+0	qid:39	 # 2307460466	map reduce
+0	qid:39	 # 421331994	map reduce
+0	qid:39	 # 2223776635	map reduce
+2   qid:39   # 2681417019   map reduce
+3   qid:39   # 3741049837   map reduce
+3   qid:39   # 3299536379   map reduce
+2   qid:39   # 3065216762   map reduce
+1   qid:39   # 3828434690   map reduce

@@ -4,7 +4,7 @@ from features import kwDocFeatures, buildFeaturesJudgmentsFile
 
 def trainModel(trainingData, testData, modelOutput, whichModel=6):
     # java -jar RankLib-2.6.jar  -ranker 6 -kcv -train osc_judgments_wfeatures_train.txt -test osc_judgments_wfeatures_test.txt -save model.txt
-    cmd = "java -jar RankLib.jar -tree 30 -ranker %s -train %s -test %s -save %s -frate 1.0" % (whichModel, trainingData, testData, modelOutput)
+    cmd = "java -jar RankLib.jar -tree 20 -leaf 10 -ranker %s -train %s -test %s -save %s " % (whichModel, trainingData, testData, modelOutput)
     print("*********************************************************************")
     print("*********************************************************************")
     print("Running %s" % cmd)
@@ -48,7 +48,7 @@ if __name__ == "__main__":
     es = Elasticsearch(timeout=1000)
     # Parse a judgments
     judgments = judgmentsByQid(judgmentsFromFile(filename='osc_judgments.txt'))
-    trainJudgments, testJudgments = partitionJudgments(judgments)
+    trainJudgments, testJudgments = partitionJudgments(judgments, testProportion=0.1)
     # Use proposed Elasticsearch queries (1.json.jinja ... N.json.jinja) to generate a training set
     # output as "osc_judgments_wfeatures.txt"
     kwDocFeatures(es, index='o19s', searchType='post', judgements=judgments)
