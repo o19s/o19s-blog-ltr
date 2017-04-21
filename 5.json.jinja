@@ -2,7 +2,9 @@
    "query": {
       "function_score": {
          "query": {
-            "match_all": {}
+            "match": {
+                "_all": "{{keywords}}"
+            }
          },
          "functions": [
             {
