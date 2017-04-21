@@ -1,45 +1,50 @@
-# qid:1: solr
-# qid:2: elasticsearch
-# qid:3: cassandra
-# qid:4: camel
-# qid:5: elastic graph
-# qid:6: ebook
-# qid:7: e-book
-# qid:8: elastic-graph
-# qid:9: learning to rank
-# qid:10: semantic
-# qid:11: bm25f
-# qid:12: taming search
-# qid:13: bm25
-# qid:14: lunch and learn
-# qid:15: basket analysis
-# qid:16: graph
-# qid:17: indexing chinese
-# qid:18: elasticsearch recommendation system
-# qid:19: elasticsearch recsys
-# qid:20: elasticsearch recommender
-# qid:21: solr synonym
-# qid:22: machine learning
-# qid:23: nosql
-# qid:24: relevant search
-# qid:25: lucene
-# qid:26: trey grainger
-# qid:27: twitter
-# qid:28: naive bayes
-# qid:29: facebook
-# qid:30: neo4j
-# qid:31: java
-# qid:32: linux
-# qid:33: groovy
-# qid:34: stackoverflow
-# qid:35: charlottesville
-# qid:36: elasticon
-# qid:37: lucene revolution
-# qid:38: book
-# qid:39: map reduce
-# qid:41: utf 8
-# qid:42: linear models
-# qid:43: data hackers
+# qid:1: solr*10
+# qid:2: elasticsearch*2
+# qid:3: cassandra*2
+# qid:4: camel*1
+# qid:5: elastic graph*1
+# qid:6: ebook*1
+# qid:7: e-book*1
+# qid:8: elastic-graph*1
+# qid:9: learning to rank*3
+# qid:10: semantic*1
+# qid:11: bm25f*1
+# qid:12: taming search*1
+# qid:13: bm25*1
+# qid:14: lunch and learn*1
+# qid:15: basket analysis*1
+# qid:16: graph*1
+# qid:17: indexing chinese*1
+# qid:18: elasticsearch recommendation system*1
+# qid:19: elasticsearch recsys*1
+# qid:20: elasticsearch recommender*1
+# qid:21: solr synonym*1
+# qid:22: machine learning*1
+# qid:23: nosql*1
+# qid:24: relevant search*1
+# qid:25: lucene*1
+# qid:26: trey grainger*1
+# qid:27: twitter*1
+# qid:28: naive bayes*1
+# qid:29: facebook*1
+# qid:30: neo4j*1
+# qid:31: java*1
+# qid:32: linux*1
+# qid:33: groovy*1
+# qid:34: stackoverflow*1
+# qid:35: charlottesville*1
+# qid:36: elasticon*1
+# qid:37: lucene revolution*1
+# qid:38: book*1
+# qid:39: map reduce*1
+# qid:41: utf 8*1
+# qid:42: linear models*1
+# qid:43: data hackers*1
+# qid:44: becamp*1
+# qid:45: beswarm*1
+# qid:47: ama*1
+# qid:48: relevancy*5
+# qid:49: match query parser*1
 
 4	qid:1	 # 4036602523	solr
 4	qid:1	 # 2349740828	solr
@@ -67,6 +72,7 @@
 2	qid:1	 # 2502109327	solr
 2	qid:1	 # 3440818580	solr
 1	qid:1	 # 78637494	solr
+1   qid:1    # 254683007 solr
 0	qid:1	 # 4177290998	solr
 0	qid:1	 # 2579852587	solr
 0	qid:1	 # 2926247873	solr
@@ -77,7 +83,7 @@
 3	qid:2	 # 3123649443	elasticsearch
 2	qid:2	 # 3252179363	elasticsearch
 3	qid:2	 # 254683007	elasticsearch
-3   qid:2    # 2993628421   elasticsearch
+3	qid:2	 # 2993628421	elasticsearch
 3	qid:2	 # 2689407214	elasticsearch
 3	qid:2	 # 17925372	elasticsearch
 2	qid:2	 # 417217470	elasticsearch
@@ -86,7 +92,7 @@
 3	qid:2	 # 578157694	elasticsearch
 4	qid:2	 # 4062359014	elasticsearch
 0	qid:2	 # 4177290998	elasticsearch
-3   qid:2    # 3252179363   elasticsearch
+3	qid:2	 # 3252179363	elasticsearch
 0	qid:3	 # 2992260052	cassandra
 4	qid:3	 # 1664871216	cassandra
 0	qid:3	 # 2606121430	cassandra
@@ -484,3 +490,36 @@
 1	qid:43	 # 1891056050	data hackers
 0	qid:43	 # 2992260052	data hackers
 0	qid:43	 # 422034358	data hackers
+4	qid:44	 # 1754464133	becamp
+2	qid:44	 # 2599472181	becamp
+2	qid:44	 # 3854160298	becamp
+1	qid:44	 # 2399734688	becamp
+0	qid:44	 # 3257141456	becamp
+2	qid:44	 # 1870385244	becamp
+2	qid:44	 # 2065293359	becamp
+0	qid:44	 # 2932203182	becamp
+1	qid:44	 # 752675227	becamp
+4	qid:45	 # 1080984974	beswarm
+3	qid:45	 # 14036114	beswarm
+3	qid:45	 # 1172819280	beswarm
+4	qid:47	 # 3225155378	ama
+4	qid:48	 # 2642574926	relevancy
+4	qid:48	 # 4062359014	relevancy
+4	qid:48	 # 1265938948	relevancy
+4	qid:48	 # 3252179363	relevancy
+4	qid:48	 # 2307460466	relevancy
+4	qid:48	 # 254683007	relevancy
+4	qid:48	 # 3123649443	relevancy
+3	qid:48	 # 3419956617	relevancy
+3	qid:48	 # 162357220	relevancy
+3	qid:48	 # 17925372	relevancy
+4	qid:49	 # 2307460466	match query parser
+1	qid:49	 # 4062359014	match query parser
+1	qid:49	 # 2642574926	match query parser
+1	qid:49	 # 1265938948	match query parser
+1	qid:49	 # 2349740828	match query parser
+1	qid:49	 # 3252179363	match query parser
+1	qid:49	 # 3477505197	match query parser
+1	qid:49	 # 578157694	match query parser
+2	qid:49	 # 254683007	match query parser
+2	qid:49	 # 3123649443	match query parser

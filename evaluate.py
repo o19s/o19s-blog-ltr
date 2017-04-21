@@ -1,4 +1,5 @@
 from features import kwDocFeatures, buildFeaturesJudgmentsFile
+from judgments import duplicateJudgmentsByWeight
 
 
 def trainModel(trainingData, testData, modelOutput, whichModel=6, features=[]):
@@ -8,7 +9,7 @@ def trainModel(trainingData, testData, modelOutput, whichModel=6, features=[]):
     with open("features.txt", "w+") as f:
         f.write("\n".join(features))
         f.close()
-    cmd = "java -jar RankLib.jar -metric2t ERR@3 -tree 20 -leaf 10 -ranker %s -train %s -test %s -feature features.txt -save %s " \
+    cmd = "java -jar RankLib.jar -metric2t ERR@5 -tree 20 -leaf 10 -ranker %s -train %s -test %s -feature features.txt -save %s " \
             % (whichModel, trainingData, testData, modelOutput)
     print("*********************************************************************")
     print("*********************************************************************")
@@ -71,11 +72,12 @@ if __name__ == "__main__":
     es = Elasticsearch(timeout=1000)
     # Parse a judgments
     judgments = judgmentsByQid(judgmentsFromFile(filename='osc_judgments.txt'))
+    judgments = duplicateJudgmentsByWeight(judgments)
     kwDocFeatures(es, index='o19s', searchType='post', judgements=judgments)
 
     results = {}
 
-    numTrials = 50
+    numTrials = 10
     for i in range(numTrials):
         trainJudgments, testJudgments = partitionJudgments(judgments, testProportion=0.2)
         # Use proposed Elasticsearch queries (1.json.jinja ... N.json.jinja) to generate a training set

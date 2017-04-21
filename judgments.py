@@ -1,12 +1,13 @@
 import re
 
 class Judgment:
-    def __init__(self, grade, qid, keywords, docId):
+    def __init__(self, grade, qid, keywords, docId, weight=1):
         self.grade = grade
         self.qid = qid
         self.keywords = keywords
         self.docId = docId
         self.features = []
+        self.weight = weight
 
     def __str__(self):
         return "grade:%s qid:%s (%s) docid:%s" % (self.grade, self.qid, self.keywords, self.docId)
@@ -31,14 +32,20 @@ def _queriesFromHeader(lines):
             break
         m = re.match(regex, line)
         if m:
-            rVal[int(m.group(1))] = m.group(2)
+            keywordAndWeight = m.group(2).split('*')
+            keyword = keywordAndWeight[0]
+            weight = 1
+            if len(keywordAndWeight) > 1:
+                weight = int(keywordAndWeight[1])
+            rVal[int(m.group(1))] = (keyword, weight)
 
     return rVal
 
 def _queriesToHeader(qidToKwDict):
     rVal = ""
     for qid, kws in qidToKwDict.items():
-        rVal += "# qid:%s: %s\n" % (qid, kws)
+        rVal += "# qid:%s: %s" % (qid, kws[0])
+        rVal += "*%s\n" % kws[1]
     rVal += "\n"
     return rVal
 
@@ -61,11 +68,11 @@ def judgmentsFromFile(filename):
     with open(filename) as f:
         qidToKeywords = _queriesFromHeader(f)
         for grade, qid, docId in _judgmentsFromBody(f):
-            yield Judgment(grade=grade, qid=qid, keywords=qidToKeywords[qid], docId=docId)
+            yield Judgment(grade=grade, qid=qid, keywords=qidToKeywords[qid][0], weight=qidToKeywords[qid][1], docId=docId)
 
 def judgmentsToFile(filename, judgmentsList):
     judgToQid = judgmentsByQid(judgmentsList) #Pretty hideosly slow stuff
-    fileHeader = _queriesToHeader({qid: judgs[0].keywords for qid, judgs in judgToQid.items()})
+    fileHeader = _queriesToHeader({qid: (judgs[0].keywords, judgs[0].weight) for qid, judgs in judgToQid.items()})
     judgByQid = sorted(judgmentsList, key=lambda j: j.qid)
     with open(filename, 'w+') as f:
         f.write(fileHeader)
@@ -82,6 +89,27 @@ def judgmentsByQid(judgments):
         except KeyError:
             rVal[judgment.qid] = [judgment]
     return rVal
+
+
+def duplicateJudgmentsByWeight(judgmentsByQid):
+    rVal = {}
+    from copy import deepcopy
+    maxQid = 0
+    for qid, judgments in judgmentsByQid.items():
+        maxQid = qid
+    print("maxQid %s" % maxQid)
+    for qid, judgments in judgmentsByQid.items():
+        rVal[qid] = judgments
+        if (judgments[0].weight > 1):
+            for i in range(judgments[0].weight - 1):
+                rVal[maxQid] = deepcopy(judgments)
+                for judg in judgments:
+                    judg.qid = maxQid
+                maxQid += 1
+
+
+    return rVal
+
 
 
 

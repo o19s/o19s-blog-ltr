@@ -2,20 +2,43 @@
    "query": {
       "function_score": {
          "query": {
-            "match": {
-                "_all": "{{keywords}}"
+            "match_all": {
             }
          },
+         "boost_mode": "replace",
+         "score_mode": "sum",
          "functions": [
             {
-               "gauss": {
-                  "post_date": {
-                     "scale": "50d",
-                     "origin": "now",
-                     "decay": 0.5
-                  }
-               }
+                "filter": {
+                    "range": {
+                        "post_date": {
+                            "gte": "now-180d"
+                        }
+                    }
+                },
+                "weight": "100"               
+            },
+            {
+                "filter": {
+                    "range": {
+                        "post_date": {
+                            "gte": "now-360d"
+                        }
+                    }
+                },
+                "weight": "100"               
+            },
+              {
+                "filter": {
+                    "range": {
+                        "post_date": {
+                            "gte": "now-90d"
+                        }
+                    }
+                },
+                "weight": "100"               
             }
+
          ]
       }
    }
